@@ -62,3 +62,44 @@ footer {
   header { padding: 44px 16px 26px; }
   main { padding: 18px; }
 }
+/* Mare Gallery Layout */
+.mare-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: #fafafa;
+}
+
+.mare-profile {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mare-profile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.mare-profile img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.mare-profile h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.mare-profile p {
+  font-size: 0.95rem;
+  color: #555;
+}
