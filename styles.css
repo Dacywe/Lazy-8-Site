@@ -103,3 +103,64 @@ footer {
   font-size: 0.95rem;
   color: #555;
 }
+/* ==== Centering & layout fixes ==== */
+
+/* Keep main content centered with a comfortable width */
+header, main, footer,
+.about, .stallion-feature, .mare-gallery {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Center section headings and paragraphs */
+.about, .stallion-feature, .mare-gallery,
+.mare-profile {
+  text-align: center;
+}
+
+/* Make grid items center inside the gallery */
+.mare-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;   /* <— centers each card */
+}
+
+/* Make each card a tidy centered block */
+.mare-profile {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.08);
+  padding: 1rem;
+}
+
+/* Center images perfectly */
+.mare-profile img,
+.stallion-feature img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;          /* <— centers images */
+  border-radius: 6px;
+}
+
+/* Stallion feature spacing */
+.stallion-feature h2,
+.stallion-feature h4 {
+  margin: 0.25rem 0;
+}
+.stallion-feature {
+  margin: 2.5rem auto;
+  padding: 1rem 0;
+}
+.stallion-ad img {
+  margin-top: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.08);
+}
